@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eastron-sdm-modbus"
+version = "0.1.0"
+description = "Device library for Eastron SDM series energy meters over Modbus"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Christoph Jung" }]
+keywords = ["modbus", "eastron", "sdm72d", "energy meter"]
+dependencies = ["modbus-connection>=4.10,<5"]
+
+[project.urls]
+Homepage = "https://github.com/cjungde/eastron-sdm-modbus"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-asyncio>=0.24"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
