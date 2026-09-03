@@ -4,13 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "eastron-sdm-modbus"
-version = "0.1.0"
+version = "0.1.0a1"
 description = "Device library for Eastron SDM series energy meters over Modbus"
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
 authors = [{ name = "Christoph Jung" }]
 keywords = ["modbus", "eastron", "sdm72d", "energy meter"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Home Automation",
+]
 dependencies = ["modbus-connection>=4.10,<5"]
 
 [project.urls]

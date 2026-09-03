@@ -1,5 +1,11 @@
 # eastron-sdm-modbus
 
+> **Alpha — not ready for installation.**
+> The register model is complete and covered by tests against an in-memory
+> backend, but it has not yet been verified against a physical meter, the API
+> may still change without notice, and no Home Assistant integration consumes it
+> yet. Do not install this for productive use.
+
 Device library for Eastron SDM series energy meters, built on
 [`modbus-connection`](https://github.com/home-assistant-libs/modbus-connection).
 
